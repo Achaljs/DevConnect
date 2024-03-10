@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProject"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Add Project" >
+
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_check_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="Title"
+        android:textColorHint="#656565"
+        app:boxStrokeColor="@color/black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layouDiscrip"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+
+
+        android:hint="Discription"
+        android:textColorHint="#656565"
+        app:boxStrokeColor="@color/black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date started"
+            />
+
+        <EditText
+            android:id="@+id/editTextDate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date ended"
+             />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="text"
+        android:hint="add link"
+android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:id="@+id/tecnologyused"
+        android:text="Technologies Used:Java, C, python etc"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.libaml.android.view.chip.ChipLayout
+        android:id="@+id/chipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginHorizontal="20dp"
+        app:textSize_="6dp"
+        app:chipPadding_="4dp"
+        app:chipTextPadding_="4dp"
+        app:textColor_="@android:color/black"
+        app:deleteIcon_="@android:drawable/presence_offline"
+        app:chipDrawable_="@drawable/backgroundpost"
+        app:chipLayoutDrawable_="@drawable/backgroundpost"
+        android:backgroundTint="#A6A4A4"
+        app:labelPosition_="left">
+    </com.libaml.android.view.chip.ChipLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="71dp"
+        android:layout_height="63dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/gallery"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+
+</LinearLayout>
